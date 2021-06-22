@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel ="icon" href="devchallenges.png">
+    <!--<script src="script.js" ></script>-->
+</head>
+<body>
+    <header>
+        <div class="logo">
+           <h1>
+                THIS INTERIOR
+            </h1>
+        
+        </div>
+        <div class="menu"></div>
+        <div class="navigation">
+                <ul>
+                    <li><a data-after="Home" class="home" href="#">Home</a></li>
+                    <li><a  data-after="Collection"href="#">Collection</a></li>
+                    <li><a  data-after="About" href="#">About</a></li>
+                </ul>
+        </div>
+    </header>
+  
+    <section class="container" id="home">
+        <div class="home-image-profile">
+            <div class="home-image">
+                <img src="photo1.png" alt="photo1">
+            </div>
+            <div class="profile">
+                <div class="profile-image">
+                    <img src="photo2.png">
+                    <div class="profile-name">
+                        <h4>Aliza Webber</h3>
+                        <p>Interior Designer</p>
+                    </div>
+                </div>
+                <h3>Designed in 2020 by <br> Aliza Webber</h3>
+            </div>
+        </div>
+        <div class="home-text">
+            <h2>Modern interior</h2>
+            <p>A full-service residential & commercial interior design and staging company offering proffessional organizing & eco-services.</p>
+            <div class="btn">
+                <a href="#">Read more <img class="arrow-home" src="long-arrow-right.png"  height="10px" width="30px"></a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Created by 19alema .devChallenge</p>
+    </footer>
+    
+    <script>
+        
+const menu = document.querySelector('.menu');
+const navigation = document.querySelector('.navigation');
+
+menu.addEventListener('click', () => {
+  menu.classList.toggle('active');
+  navigation.classList.toggle('active');
+});
+
+    </script>
+</body>
+</html>

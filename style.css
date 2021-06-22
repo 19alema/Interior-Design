@@ -1,0 +1,465 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    color: #000;
+  background-color: #455;
+}
+/*Home Style*/
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#home {
+   position: relative;
+   top: 0;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-between;
+  height: 100vh;
+  z-index: 5;
+  color:#fff;
+ 
+}
+
+.home-image-profile {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column;
+
+}
+
+.profile {
+   position: absolute;
+   display: flex;
+   height: 130px;
+   width: 298px;
+   right: 50px;
+   justify-content: space-between;
+   align-items: center;
+   border: 2px solid #000;
+   border-radius: 5px;
+   flex-direction: column;
+   color: white;
+   background-color: #000;
+   margin-bottom: -50px;
+}
+.profile-name {
+    margin-left: 10px;
+}
+h3 {
+    font-weight: 700;
+    font-size: 15px;
+}
+.profile-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.profile-image  img {
+    width: 80px;
+    height: 80px;
+    border-radius:50%;
+}
+.home-text {
+    width: 20%;
+    color: #fff;
+    line-height: 25px;
+    margin: 0 20px;
+}
+
+.home-text p {
+    margin: 20px 0;
+}
+
+.btn a {
+    color: white;
+    padding: 5px 0px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: justify;
+}
+
+.arrow-home {
+    margin: 0 8px;
+    font-weight: bold;
+    font-size: 16px;
+}
+.btn {
+    margin: 20px 0;
+}
+.home-image img {
+    height: 500px;
+    width: 800px;
+}
+body {
+    font-family: Montserrat;
+    background-color: black;
+    color: #fff;
+}
+
+/* nav */
+
+ h1 {
+     position: fixed;
+    z-index: 30;
+    left: 20px;
+    color: #fff;
+    top: 20px;
+    font-family: 'lora', Courier New, Courier, monospace;
+    border: 2px solid #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    opacity: 1;
+    z-index: 30;
+}
+
+.home {
+    border-bottom: 4px solid #fff;
+}
+
+.navigation {
+    height: 10%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    float: right;
+    z-index: 9;
+    top: 0;
+    right: 20px;
+    background-color: #000;
+    transition: .3s;
+    position: fixed;
+}
+
+.navigation ul {
+     display: flex;
+     justify-content:space-between;
+     align-items: center;
+}
+
+.navigation ul li {
+    list-style-type: none;
+    text-align: right;
+}
+
+.navigation ul li a {
+    justify-content: space-between;
+    float: right;
+    margin: 0 50px;
+    color: white;
+    font-size: 25px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+ footer {
+     text-align: center;
+     line-height: 50px;
+ }
+
+
+@media(max-width: 1000px)  {
+    #home {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        margin: 30px;
+    }
+
+    
+    .navigation ul li a {
+        margin: 40px;
+        color: #fff;
+        line-height: 20px;
+        font-weight: 900;
+        font-size: 30px;
+        text-decoration: none;
+        z-index: 1;
+        
+    }
+
+   
+.menu {
+    background-image: url(menu\ \(3\).png);
+    right: 10px;
+    position: fixed;
+    z-index: 50;
+    top: 20px;
+    height: 40px;
+    width: 40px;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.navigation ul {
+    display: block;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+
+.navigation {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    position: fixed;
+ 
+    z-index: 15;
+    background-color: #000;
+    top: 0;
+    left:100%;
+    transition: .3s;
+}
+
+
+    .menu.active {
+        background-image: url("multiply.png");
+        right: 10px;
+        position: fixed;
+        z-index: 50;
+        top: 20px;
+        height: 40px;
+        width: 40px;
+        background-repeat: no-repeat;
+        border-radius: 8px;
+        background-position: center;
+        cursor: pointer;
+    }
+
+    .navigation.active {
+        left: 0;
+    }
+    
+ 
+    .home-image img {
+        height: 40vh;
+        width: 80vw;
+        top: 311.5px;
+        left: 378.29px;
+    }
+
+    .home-text {
+        width: 100%;
+        margin: 20px 0;
+       height: 150px;
+       text-align: justify;
+    }
+
+     .profile-image  img {
+        width: 60px;
+        height: 60px;
+    }
+    
+    
+.profile {
+    width: 220px;
+    height: 85px;
+  }
+  h3 {
+      font-weight: 700;
+      font-size: 12px;
+  }
+  .profile-image {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  .profile-image  img {
+      width: 40px;
+      height: 40px;
+  }
+ 
+   h3 {
+      font-size: 12px;
+  }
+ 
+  .profile-name p {
+      font-size: 10px;
+  }
+ 
+  .profile-name h4 {
+      font-size: 15px;
+      margin-top: 0;
+  }
+ 
+  .home-image-ptofile {
+      margin-top: 0px;
+  }
+ 
+  .home-text {
+    margin: 20px;
+  }
+ 
+  .logo h1 {
+      font-size: 12px;
+  }
+
+  .navigation {
+      display: flex;
+  }
+
+}
+
+
+@media (max-width: 500px) {
+    .home-image img {
+        height: 35vh;
+        width: 80vw;
+   
+    }
+
+.profile {
+   width: 150px;
+   height: 80px;
+ }
+ .profile-name {
+     margin-left: 10px;
+ }
+ h3 {
+     font-weight: 700;
+     font-size: 12px;
+ }
+ .profile-image {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+ .profile-image  img {
+     width: 40px;
+     height: 40px;
+ }
+
+  h3 {
+     font-size: 8px;
+ }
+
+ .menu {
+     width: 40px;
+     height: 40px;
+ }
+
+ .home-text {
+     margin: 100px;
+ }
+
+}
+
+@media (max-width: 350px)  {
+    .home-text p{
+        font-size: 8px;
+        line-height: 10px;
+    }
+
+    .home-image img {
+        height: 30vh;
+        width: 80vw;
+    }
+   .profile {
+       bottom: 90px;
+       width: 150px;
+       right: 10px;
+   }
+    .logo h1 {
+        font-size: 5px;
+        border: 1px solid #fff;
+    }
+
+    .navigation ul li a {
+        font-size: 10px;
+        line-height: 15px;
+    }
+
+    .home {
+        border-bottom: 1px;
+    }
+
+    .home-text h2 {
+        font-size: 15px;
+    }
+
+    .home-text a {
+        font-size: 10px;
+    }
+
+    .profile {
+        width: 80px;
+        height: 40px;
+    }
+   .profile-image img {
+       width: 25px;
+       height: 25px;
+   }
+
+   .profile-name h4 {
+       font-size: 6px;
+   }
+
+   .profile-name p {
+        font-size: 5px;
+   }
+
+    h3 {
+       font-size: 7px;
+       margin-top: 8px;
+   }
+
+     .home-text p{
+         margin: 5px 0;
+     }
+
+    .btn {
+       margin: 0;
+    }
+
+    .btn a {
+        font-size: 6px;
+    }
+
+    .menu {
+        width: 25px;
+        height: 25px;
+    }
+
+    footer p {
+        font-size: 7px;
+    }
+
+    .home-text {
+        margin-bottom: 2px;
+    }
+
+}
+
+
+
